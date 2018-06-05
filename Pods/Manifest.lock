@@ -1,0 +1,32 @@
+PODS:
+  - AMap3DMap (6.2.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.5.2)
+  - CocoaAsyncSocket (7.6.3)
+  - MJExtension (3.0.13)
+  - PureLayout (3.0.2)
+
+DEPENDENCIES:
+  - AMap3DMap
+  - CocoaAsyncSocket
+  - MJExtension
+  - PureLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMap3DMap
+    - AMapFoundation
+    - CocoaAsyncSocket
+    - MJExtension
+    - PureLayout
+
+SPEC CHECKSUMS:
+  AMap3DMap: 4170b8e1674883eefc068e277abf4dbaa9ea5f2d
+  AMapFoundation: 46b194013a3b06e0e82e8963108ceb972d4200b8
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+
+PODFILE CHECKSUM: 3a727184f58c04404caa834b2a5fe9bd7513e94d
+
+COCOAPODS: 1.5.3
