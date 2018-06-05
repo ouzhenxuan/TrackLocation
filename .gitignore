@@ -1,2 +1,4 @@
 iii
 *.MAMapKit.framework
+Pods/AMap3DMap/*.*
+Pods/Headers/Public/AMap3DMap/MAMapKit/*
