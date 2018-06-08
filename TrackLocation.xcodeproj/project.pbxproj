@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7EE821061D01C65ADBAD75F1 /* libPods-TrackLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A0C5BE9BDC8A1791E0474C /* libPods-TrackLocation.a */; };
+		F5A55FD920C94FEE00D50990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A55FD820C94FEE00D50990 /* Assets.xcassets */; };
 		F5F7FE1B20C00E640058AA2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7FE1A20C00E640058AA2A /* AppDelegate.m */; };
 		F5F7FE1E20C00E640058AA2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7FE1D20C00E640058AA2A /* ViewController.m */; };
 		F5F7FE2120C00E640058AA2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F7FE1F20C00E640058AA2A /* Main.storyboard */; };
-		F5F7FE2320C00E660058AA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F7FE2220C00E660058AA2A /* Assets.xcassets */; };
 		F5F7FE2620C00E660058AA2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F7FE2420C00E660058AA2A /* LaunchScreen.storyboard */; };
 		F5F7FE2920C00E660058AA2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7FE2820C00E660058AA2A /* main.m */; };
 /* End PBXBuildFile section */
@@ -20,13 +20,13 @@
 		75AECA43D479482CA10994AC /* Pods-TrackLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackLocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackLocation/Pods-TrackLocation.debug.xcconfig"; sourceTree = "<group>"; };
 		A5A0C5BE9BDC8A1791E0474C /* libPods-TrackLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrackLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7AA9EEB7070AFE8A1E94EB /* Pods-TrackLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackLocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackLocation/Pods-TrackLocation.release.xcconfig"; sourceTree = "<group>"; };
+		F5A55FD820C94FEE00D50990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F7FE1620C00E640058AA2A /* TrackLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F7FE1920C00E640058AA2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5F7FE1A20C00E640058AA2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5F7FE1C20C00E640058AA2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F5F7FE1D20C00E640058AA2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5F7FE2020C00E640058AA2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F5F7FE2220C00E660058AA2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F7FE2520C00E660058AA2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5F7FE2720C00E660058AA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5F7FE2820C00E660058AA2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,10 +87,10 @@
 				F5F7FE1C20C00E640058AA2A /* ViewController.h */,
 				F5F7FE1D20C00E640058AA2A /* ViewController.m */,
 				F5F7FE1F20C00E640058AA2A /* Main.storyboard */,
-				F5F7FE2220C00E660058AA2A /* Assets.xcassets */,
 				F5F7FE2420C00E660058AA2A /* LaunchScreen.storyboard */,
 				F5F7FE2720C00E660058AA2A /* Info.plist */,
 				F5F7FE2820C00E660058AA2A /* main.m */,
+				F5A55FD820C94FEE00D50990 /* Assets.xcassets */,
 			);
 			path = TrackLocation;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5F7FE2620C00E660058AA2A /* LaunchScreen.storyboard in Resources */,
-				F5F7FE2320C00E660058AA2A /* Assets.xcassets in Resources */,
+				F5A55FD920C94FEE00D50990 /* Assets.xcassets in Resources */,
 				F5F7FE2120C00E640058AA2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
