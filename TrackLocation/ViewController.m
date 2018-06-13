@@ -10,6 +10,7 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <GCDAsyncSocket.h>
+#import <math.h>
 
 
 @interface ViewController () <MAMapViewDelegate,GCDAsyncSocketDelegate>
@@ -177,7 +178,14 @@
             lng = [latlng[1] doubleValue];
         }@catch (NSException * ex){
             NSLog(@"%@",ex);
+            return;
         }
+    }else{
+        return;
+    }
+    
+    if (fabs(lat)>90 || fabs(lng)>180) {
+        return;
     }
     
     [_pointAnnotation setCoordinate:CLLocationCoordinate2DMake(lat , lng)];
