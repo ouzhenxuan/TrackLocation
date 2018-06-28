@@ -24,6 +24,7 @@
 
 @property (nonatomic,strong) UIView * hudView ;
 @property (nonatomic,strong) UILabel * tipLabel ;
+@property (nonatomic,strong) UILabel * statusLabel;
 @end
 
 @implementation ViewController
@@ -81,6 +82,16 @@
     [_hudView addSubview:_tipLabel];
     
     [self.view addSubview:_hudView];
+    
+    
+    
+    _statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 64, 150, 50)];
+    _statusLabel.textAlignment = NSTextAlignmentLeft;
+    _statusLabel.text = @"未连接";
+    _statusLabel.font = [UIFont systemFontOfSize:16];
+    _statusLabel.textColor = [UIColor blueColor];
+    
+    [self.view addSubview:_statusLabel];
 }
 
 - (void)btnClick:(UIButton *)btn{
@@ -139,18 +150,32 @@
 -(void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
     NSLog(@"%s",__func__);
     [self showMessage:@"连接服务器成功"];
+    __unsafe_unretained typeof(self)weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf.statusLabel setText:@"连接服务器成功"];
+    });
+    
     [_socket readDataWithTimeout:-1 tag:99];
 }
 
 #pragma mark 断开连接
 -(void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
     [_timer invalidate];
+    __unsafe_unretained typeof(self)weakSelf = self;
     if (err) {
         [self showMessage:@"连接失败"];
         NSLog(@"连接失败");
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.statusLabel setText:@"连接失败"];
+        });
     }else{
         NSLog(@"正常断开");
         [self showMessage:@"正常断开"];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.statusLabel setText:@"正常断开"];
+        });
     }
 }
 
